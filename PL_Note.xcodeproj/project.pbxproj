@@ -10,7 +10,6 @@
 		2155F732F7FDAF028EA23DA3 /* libPods-PL_NoteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6195769D214EE5EDA2D6200 /* libPods-PL_NoteTests.a */; };
 		762BF8511F42D7A3001FB470 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 762BF8501F42D7A3001FB470 /* main.m */; };
 		762BF8541F42D7A3001FB470 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 762BF8531F42D7A3001FB470 /* AppDelegate.m */; };
-		762BF8571F42D7A3001FB470 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762BF8561F42D7A3001FB470 /* ViewController.m */; };
 		762BF85A1F42D7A3001FB470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762BF8581F42D7A3001FB470 /* Main.storyboard */; };
 		762BF85F1F42D7A3001FB470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762BF85D1F42D7A3001FB470 /* LaunchScreen.storyboard */; };
 		762BF86A1F42D7A3001FB470 /* PL_NoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 762BF8691F42D7A3001FB470 /* PL_NoteTests.m */; };
@@ -75,8 +74,6 @@
 		762BF8501F42D7A3001FB470 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		762BF8521F42D7A3001FB470 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		762BF8531F42D7A3001FB470 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		762BF8551F42D7A3001FB470 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
-		762BF8561F42D7A3001FB470 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		762BF8591F42D7A3001FB470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		762BF85E1F42D7A3001FB470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		762BF8601F42D7A3001FB470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -306,8 +303,6 @@
 			children = (
 				762BF8521F42D7A3001FB470 /* AppDelegate.h */,
 				762BF8531F42D7A3001FB470 /* AppDelegate.m */,
-				762BF8551F42D7A3001FB470 /* ViewController.h */,
-				762BF8561F42D7A3001FB470 /* ViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -657,7 +652,6 @@
 			files = (
 				76E3BC1A1F43C3AF005D6B4D /* AllNotesViewController.m in Sources */,
 				76E3BC1D1F43C3C8005D6B4D /* AllNoteDetailViewController.m in Sources */,
-				762BF8571F42D7A3001FB470 /* ViewController.m in Sources */,
 				76E3BC201F43C3DA005D6B4D /* SettingViewController.m in Sources */,
 				76E3BC021F43C321005D6B4D /* LaunchScreenViewController.m in Sources */,
 				76E3BC0E1F43C373005D6B4D /* ForgetPasswordViewController.m in Sources */,

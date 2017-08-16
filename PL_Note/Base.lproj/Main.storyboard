@@ -259,6 +259,9 @@
                                 <state key="normal" title="获取验证码">
                                     <color key="titleColor" red="0.01176470588" green="0.27450980390000002" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="getValidateCodeButtonPressed:" destination="bA6-PN-8Ux" eventType="touchUpInside" id="WRM-D1-5Nv"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入你的新密码" textAlignment="natural" minimumFontSize="17" id="8sH-QC-5Va" userLabel="Now Password Text Field">
                                 <rect key="frame" x="19.5" y="174.5" width="328.5" height="47"/>
@@ -275,6 +278,9 @@
                                 <state key="normal" title="重设密码">
                                     <color key="titleColor" red="0.01176470588" green="0.27450980390000002" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="resettingPasswordButtonPressed:" destination="bA6-PN-8Ux" eventType="touchUpInside" id="RuS-xf-wVY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P0N-co-d4g">
                                 <rect key="frame" x="125.5" y="616" width="117" height="30"/>
@@ -283,10 +289,18 @@
                                 <state key="normal" title="或者，登录">
                                     <color key="titleColor" red="0.67450980390000004" green="0.94117647059999998" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="bA6-PN-8Ux" eventType="touchUpInside" id="Lf6-Xf-C0d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.27058823529999998" green="0.69019607839999997" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="nowPasswordTextField" destination="8sH-QC-5Va" id="ugC-K6-f7D"/>
+                        <outlet property="phoneTextField" destination="yQu-KG-69M" id="hHK-OB-49n"/>
+                        <outlet property="validateCodeTextField" destination="joQ-RE-bYx" id="Gjf-8x-AKM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIu-lq-DwP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
