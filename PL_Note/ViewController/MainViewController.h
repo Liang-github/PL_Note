@@ -10,4 +10,8 @@
 
 @interface MainViewController : UIViewController
 
+@property (nonatomic, copy) NSString *tempTitle;
+@property (nonatomic, copy) NSString *tempText;
+@property (nonatomic, strong) NSIndexPath *tempIndexPath;
+
 @end

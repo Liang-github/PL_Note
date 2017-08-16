@@ -7,8 +7,17 @@
 //
 
 #import "MainViewController.h"
+#import <BmobSDK/Bmob.h>
+#import "AppDelegate.h"
+#import "Notes.h"
+#import "NoteDetailViewController.h"
+#import "AllNotesViewController.h"
+#import "Constant.h"
+#import "AllUtils.h"
+#import "SettingViewController.h"
 
-@interface MainViewController ()
+@interface MainViewController ()<UITableViewDataSource, UITableViewDelegate>
+
 
 @end
 
