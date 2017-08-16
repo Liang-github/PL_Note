@@ -7,7 +7,8 @@
 //
 
 #import "LaunchScreenViewController.h"
-
+#import "AppDelegate.h"
+#import "AllUtils.h"
 @interface LaunchScreenViewController ()
 
 @end
@@ -19,19 +20,30 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([userDefaults objectForKey:@"guidepage"] == nil) {
+        //如果这个首选项为空的话，表示用户是刚刚安装app，所以要显示引导页；
+        //直接跳到引导页；
+        [AllUtils jumpToViewController:@"GuidePageViewController" contextViewController:self handler:nil];
+    } else {
+        //不是第一次安装
+        if ([userDefaults objectForKey:@"username"] != nil && [userDefaults objectForKey:@"Password"] != nil) {
+            //存储了用户名密码，直接跳到主界面
+            NSLog(@"直接跳到主界面");
+            AppDelegate *globalApp = [UIApplication sharedApplication].delegate;
+            globalApp.GLOBAL_USERNAME = [userDefaults objectForKey:@"username"];
+            globalApp.GLOBAL_USERID = [userDefaults objectForKey:@"userId"];
+            globalApp.GLOBAL_NICKNAME = [userDefaults objectForKey:@"nickname"];
+            globalApp.GLOBAL_PASSWORD = [userDefaults objectForKey:@"Password"];
+            [AllUtils jumpToViewController:@"MainViewController" contextViewController:self handler:nil];
+        } else {
+            NSLog(@"跳到登录界面");
+            //跳到登录界面
+            [AllUtils jumpToViewController:@"LoginViewController" contextViewController:self handler:nil];
+        }
+    }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

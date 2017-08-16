@@ -7,6 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import <BmobSDK/Bmob.h>
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+//腾讯开放平台
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+//微信SDK头文件
+#import "WXApi.h"
+//微博SDK头文件
+#import "WeiboSDK.h"
+
+#import <SMS_SDK/SMSSDK.h>
+#import <SMS_SDK/SMSSDK+AddressBookMethods.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +29,61 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Bmob registerWithAppKey:@"399fd662392b0852cb22181e40e7b72e"];
+    
+    [ShareSDK registerApp:@"c5435c5a0d38"
+     
+          activePlatforms:@[
+                            @(SSDKPlatformTypeSinaWeibo),
+                            @(SSDKPlatformTypeMail),
+                            @(SSDKPlatformTypeSMS),
+                            @(SSDKPlatformTypeCopy),
+                            @(SSDKPlatformTypeWechat),
+                            @(SSDKPlatformTypeQQ)]
+                 onImport:^(SSDKPlatformType platformType)
+     {
+         switch (platformType)
+         {
+             case SSDKPlatformTypeWechat:
+                 [ShareSDKConnector connectWeChat:[WXApi class]];
+                 break;
+             case SSDKPlatformTypeQQ:
+                 [ShareSDKConnector connectQQ:[QQApiInterface class] tencentOAuthClass:[TencentOAuth class]];
+                 break;
+             case SSDKPlatformTypeSinaWeibo:
+                 [ShareSDKConnector connectWeibo:[WeiboSDK class]];
+                 break;
+             default:
+                 break;
+         }
+     }
+          onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo)
+     {
+         
+         switch (platformType)
+         {
+             case SSDKPlatformTypeSinaWeibo:
+                 //设置新浪微博应用信息,其中authType设置为使用SSO＋Web形式授权
+                 [appInfo SSDKSetupSinaWeiboByAppKey:@"568898243"
+                                           appSecret:@"38a4f8204cc784f81f9f0daaf31e02e3"
+                                         redirectUri:@"http://www.sharesdk.cn"
+                                            authType:SSDKAuthTypeBoth];
+                 break;
+             case SSDKPlatformTypeWechat:
+                 [appInfo SSDKSetupWeChatByAppId:@"wxa7be3ef36352dc5c"
+                                       appSecret:@"d4624c36b6795d1d99dcf0547af5443d"];
+                 break;
+             case SSDKPlatformTypeQQ:
+                 [appInfo SSDKSetupQQByAppId:@"1104897411"
+                                      appKey:@"BPquMGokMcNp4SOx"
+                                    authType:SSDKAuthTypeBoth];
+                 break;
+                 
+             default:
+                 break;
+         }
+     }];
+    [SMSSDK registerApp:@"c5b27554cac0" withSecret:@"e5b73794486527c6af5b82b5bb450300"];
     return YES;
 }
 

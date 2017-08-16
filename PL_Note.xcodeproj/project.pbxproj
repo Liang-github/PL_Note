@@ -41,6 +41,11 @@
 		76E3BC231F43C3EA005D6B4D /* NicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC221F43C3EA005D6B4D /* NicknameViewController.m */; };
 		76E3BC261F43C3FF005D6B4D /* AboutAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC251F43C3FF005D6B4D /* AboutAppViewController.m */; };
 		76E3BC291F43C41A005D6B4D /* UpdatePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC281F43C41A005D6B4D /* UpdatePasswordViewController.m */; };
+		76E3BC2C1F43EA9C005D6B4D /* AllUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC2B1F43EA9C005D6B4D /* AllUtils.m */; };
+		76E3BC2F1F43F2BD005D6B4D /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC2E1F43F2BD005D6B4D /* Constant.m */; };
+		76E3BC321F43F2D2005D6B4D /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC311F43F2D2005D6B4D /* Notes.m */; };
+		76E3BC351F43F2E4005D6B4D /* SettingList.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC341F43F2E4005D6B4D /* SettingList.m */; };
+		76E3BC381F4409D7005D6B4D /* BmobOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC371F4409D7005D6B4D /* BmobOperation.m */; };
 		B78437150A1EBC3FCDF6CE87 /* libPods-PL_Note.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2771309E4B32104BAFE1D8D0 /* libPods-PL_Note.a */; };
 		D0B786E4149AD923BC15188F /* libPods-PL_NoteUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D1218B53282183EBABAD10 /* libPods-PL_NoteUITests.a */; };
 /* End PBXBuildFile section */
@@ -121,6 +126,16 @@
 		76E3BC251F43C3FF005D6B4D /* AboutAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutAppViewController.m; sourceTree = "<group>"; };
 		76E3BC271F43C41A005D6B4D /* UpdatePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatePasswordViewController.h; sourceTree = "<group>"; };
 		76E3BC281F43C41A005D6B4D /* UpdatePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePasswordViewController.m; sourceTree = "<group>"; };
+		76E3BC2A1F43EA9C005D6B4D /* AllUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllUtils.h; sourceTree = "<group>"; };
+		76E3BC2B1F43EA9C005D6B4D /* AllUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllUtils.m; sourceTree = "<group>"; };
+		76E3BC2D1F43F2BD005D6B4D /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		76E3BC2E1F43F2BD005D6B4D /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		76E3BC301F43F2D2005D6B4D /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
+		76E3BC311F43F2D2005D6B4D /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
+		76E3BC331F43F2E4005D6B4D /* SettingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingList.h; sourceTree = "<group>"; };
+		76E3BC341F43F2E4005D6B4D /* SettingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingList.m; sourceTree = "<group>"; };
+		76E3BC361F4409D7005D6B4D /* BmobOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BmobOperation.h; sourceTree = "<group>"; };
+		76E3BC371F4409D7005D6B4D /* BmobOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BmobOperation.m; sourceTree = "<group>"; };
 		7D24FBD5B43E686976249472 /* Pods-PL_NoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_NoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PL_NoteTests/Pods-PL_NoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DAFEF57857C35244EE34EF5 /* Pods-PL_NoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_NoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PL_NoteUITests/Pods-PL_NoteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8F996048089FD1B29CF2DDD4 /* Pods-PL_Note.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_Note.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PL_Note/Pods-PL_Note.debug.xcconfig"; sourceTree = "<group>"; };
@@ -212,7 +227,6 @@
 				762BF8861F42EC06001FB470 /* Other */,
 				762BF8871F42EC18001FB470 /* ViewController */,
 				762BF8891F42EC96001FB470 /* BmobUtils */,
-				762BF8601F42D7A3001FB470 /* Info.plist */,
 				762BF84F1F42D7A3001FB470 /* Supporting Files */,
 			);
 			path = PL_Note;
@@ -221,6 +235,7 @@
 		762BF84F1F42D7A3001FB470 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				762BF8601F42D7A3001FB470 /* Info.plist */,
 				762BF88C1F42ED30001FB470 /* shareImg.png */,
 				762BF88A1F42ED0D001FB470 /* Assets.xcassets */,
 				762BF8501F42D7A3001FB470 /* main.m */,
@@ -258,6 +273,8 @@
 		762BF8831F42EBD0001FB470 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				76E3BC2A1F43EA9C005D6B4D /* AllUtils.h */,
+				76E3BC2B1F43EA9C005D6B4D /* AllUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -265,6 +282,12 @@
 		762BF8841F42EBE4001FB470 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				76E3BC2D1F43F2BD005D6B4D /* Constant.h */,
+				76E3BC2E1F43F2BD005D6B4D /* Constant.m */,
+				76E3BC301F43F2D2005D6B4D /* Notes.h */,
+				76E3BC311F43F2D2005D6B4D /* Notes.m */,
+				76E3BC331F43F2E4005D6B4D /* SettingList.h */,
+				76E3BC341F43F2E4005D6B4D /* SettingList.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +350,8 @@
 		762BF8891F42EC96001FB470 /* BmobUtils */ = {
 			isa = PBXGroup;
 			children = (
+				76E3BC361F4409D7005D6B4D /* BmobOperation.h */,
+				76E3BC371F4409D7005D6B4D /* BmobOperation.m */,
 			);
 			path = BmobUtils;
 			sourceTree = "<group>";
@@ -637,10 +662,15 @@
 				76E3BC021F43C321005D6B4D /* LaunchScreenViewController.m in Sources */,
 				76E3BC0E1F43C373005D6B4D /* ForgetPasswordViewController.m in Sources */,
 				76E3BC081F43C352005D6B4D /* LoginViewController.m in Sources */,
+				76E3BC2C1F43EA9C005D6B4D /* AllUtils.m in Sources */,
 				76E3BC231F43C3EA005D6B4D /* NicknameViewController.m in Sources */,
+				76E3BC381F4409D7005D6B4D /* BmobOperation.m in Sources */,
+				76E3BC2F1F43F2BD005D6B4D /* Constant.m in Sources */,
 				76E3BC291F43C41A005D6B4D /* UpdatePasswordViewController.m in Sources */,
+				76E3BC321F43F2D2005D6B4D /* Notes.m in Sources */,
 				76E3BC141F43C38F005D6B4D /* AddNoteViewController.m in Sources */,
 				76E3BC111F43C380005D6B4D /* RegisterViewController.m in Sources */,
+				76E3BC351F43F2E4005D6B4D /* SettingList.m in Sources */,
 				76E3BC051F43C340005D6B4D /* GuidePageViewController.m in Sources */,
 				76E3BC0B1F43C360005D6B4D /* MainViewController.m in Sources */,
 				76E3BC171F43C39E005D6B4D /* NoteDetailViewController.m in Sources */,
@@ -806,6 +836,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PL.PL-Note";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -822,6 +853,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PL.PL-Note";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
