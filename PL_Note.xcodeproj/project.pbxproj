@@ -27,6 +27,20 @@
 		762BF89D1F42EDC4001FB470 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762BF89C1F42EDC4001FB470 /* JavaScriptCore.framework */; };
 		762BF8A01F42EDF6001FB470 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762BF89E1F42EDF6001FB470 /* MOBFoundation.framework */; };
 		762BF8A11F42EDF6001FB470 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762BF89F1F42EDF6001FB470 /* SMS_SDK.framework */; };
+		76E3BC021F43C321005D6B4D /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC011F43C321005D6B4D /* LaunchScreenViewController.m */; };
+		76E3BC051F43C340005D6B4D /* GuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC041F43C340005D6B4D /* GuidePageViewController.m */; };
+		76E3BC081F43C352005D6B4D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC071F43C352005D6B4D /* LoginViewController.m */; };
+		76E3BC0B1F43C360005D6B4D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC0A1F43C360005D6B4D /* MainViewController.m */; };
+		76E3BC0E1F43C373005D6B4D /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC0D1F43C373005D6B4D /* ForgetPasswordViewController.m */; };
+		76E3BC111F43C380005D6B4D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC101F43C380005D6B4D /* RegisterViewController.m */; };
+		76E3BC141F43C38F005D6B4D /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC131F43C38F005D6B4D /* AddNoteViewController.m */; };
+		76E3BC171F43C39E005D6B4D /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC161F43C39E005D6B4D /* NoteDetailViewController.m */; };
+		76E3BC1A1F43C3AF005D6B4D /* AllNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC191F43C3AF005D6B4D /* AllNotesViewController.m */; };
+		76E3BC1D1F43C3C8005D6B4D /* AllNoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC1C1F43C3C8005D6B4D /* AllNoteDetailViewController.m */; };
+		76E3BC201F43C3DA005D6B4D /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC1F1F43C3DA005D6B4D /* SettingViewController.m */; };
+		76E3BC231F43C3EA005D6B4D /* NicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC221F43C3EA005D6B4D /* NicknameViewController.m */; };
+		76E3BC261F43C3FF005D6B4D /* AboutAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC251F43C3FF005D6B4D /* AboutAppViewController.m */; };
+		76E3BC291F43C41A005D6B4D /* UpdatePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BC281F43C41A005D6B4D /* UpdatePasswordViewController.m */; };
 		B78437150A1EBC3FCDF6CE87 /* libPods-PL_Note.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2771309E4B32104BAFE1D8D0 /* libPods-PL_Note.a */; };
 		D0B786E4149AD923BC15188F /* libPods-PL_NoteUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D1218B53282183EBABAD10 /* libPods-PL_NoteUITests.a */; };
 /* End PBXBuildFile section */
@@ -79,6 +93,34 @@
 		762BF89C1F42EDC4001FB470 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		762BF89E1F42EDF6001FB470 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
 		762BF89F1F42EDF6001FB470 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		76E3BC001F43C321005D6B4D /* LaunchScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchScreenViewController.h; sourceTree = "<group>"; };
+		76E3BC011F43C321005D6B4D /* LaunchScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
+		76E3BC031F43C340005D6B4D /* GuidePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidePageViewController.h; sourceTree = "<group>"; };
+		76E3BC041F43C340005D6B4D /* GuidePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidePageViewController.m; sourceTree = "<group>"; };
+		76E3BC061F43C352005D6B4D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		76E3BC071F43C352005D6B4D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		76E3BC091F43C360005D6B4D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		76E3BC0A1F43C360005D6B4D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		76E3BC0C1F43C373005D6B4D /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
+		76E3BC0D1F43C373005D6B4D /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = "<group>"; };
+		76E3BC0F1F43C380005D6B4D /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		76E3BC101F43C380005D6B4D /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		76E3BC121F43C38F005D6B4D /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
+		76E3BC131F43C38F005D6B4D /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
+		76E3BC151F43C39E005D6B4D /* NoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDetailViewController.h; sourceTree = "<group>"; };
+		76E3BC161F43C39E005D6B4D /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailViewController.m; sourceTree = "<group>"; };
+		76E3BC181F43C3AF005D6B4D /* AllNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllNotesViewController.h; sourceTree = "<group>"; };
+		76E3BC191F43C3AF005D6B4D /* AllNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllNotesViewController.m; sourceTree = "<group>"; };
+		76E3BC1B1F43C3C8005D6B4D /* AllNoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllNoteDetailViewController.h; sourceTree = "<group>"; };
+		76E3BC1C1F43C3C8005D6B4D /* AllNoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllNoteDetailViewController.m; sourceTree = "<group>"; };
+		76E3BC1E1F43C3DA005D6B4D /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		76E3BC1F1F43C3DA005D6B4D /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		76E3BC211F43C3EA005D6B4D /* NicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NicknameViewController.h; sourceTree = "<group>"; };
+		76E3BC221F43C3EA005D6B4D /* NicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NicknameViewController.m; sourceTree = "<group>"; };
+		76E3BC241F43C3FF005D6B4D /* AboutAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutAppViewController.h; sourceTree = "<group>"; };
+		76E3BC251F43C3FF005D6B4D /* AboutAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutAppViewController.m; sourceTree = "<group>"; };
+		76E3BC271F43C41A005D6B4D /* UpdatePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatePasswordViewController.h; sourceTree = "<group>"; };
+		76E3BC281F43C41A005D6B4D /* UpdatePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePasswordViewController.m; sourceTree = "<group>"; };
 		7D24FBD5B43E686976249472 /* Pods-PL_NoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_NoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PL_NoteTests/Pods-PL_NoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DAFEF57857C35244EE34EF5 /* Pods-PL_NoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_NoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PL_NoteUITests/Pods-PL_NoteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8F996048089FD1B29CF2DDD4 /* Pods-PL_Note.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_Note.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PL_Note/Pods-PL_Note.debug.xcconfig"; sourceTree = "<group>"; };
@@ -250,6 +292,34 @@
 		762BF8871F42EC18001FB470 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				76E3BC001F43C321005D6B4D /* LaunchScreenViewController.h */,
+				76E3BC011F43C321005D6B4D /* LaunchScreenViewController.m */,
+				76E3BC031F43C340005D6B4D /* GuidePageViewController.h */,
+				76E3BC041F43C340005D6B4D /* GuidePageViewController.m */,
+				76E3BC061F43C352005D6B4D /* LoginViewController.h */,
+				76E3BC071F43C352005D6B4D /* LoginViewController.m */,
+				76E3BC091F43C360005D6B4D /* MainViewController.h */,
+				76E3BC0A1F43C360005D6B4D /* MainViewController.m */,
+				76E3BC0C1F43C373005D6B4D /* ForgetPasswordViewController.h */,
+				76E3BC0D1F43C373005D6B4D /* ForgetPasswordViewController.m */,
+				76E3BC0F1F43C380005D6B4D /* RegisterViewController.h */,
+				76E3BC101F43C380005D6B4D /* RegisterViewController.m */,
+				76E3BC121F43C38F005D6B4D /* AddNoteViewController.h */,
+				76E3BC131F43C38F005D6B4D /* AddNoteViewController.m */,
+				76E3BC151F43C39E005D6B4D /* NoteDetailViewController.h */,
+				76E3BC161F43C39E005D6B4D /* NoteDetailViewController.m */,
+				76E3BC181F43C3AF005D6B4D /* AllNotesViewController.h */,
+				76E3BC191F43C3AF005D6B4D /* AllNotesViewController.m */,
+				76E3BC1B1F43C3C8005D6B4D /* AllNoteDetailViewController.h */,
+				76E3BC1C1F43C3C8005D6B4D /* AllNoteDetailViewController.m */,
+				76E3BC1E1F43C3DA005D6B4D /* SettingViewController.h */,
+				76E3BC1F1F43C3DA005D6B4D /* SettingViewController.m */,
+				76E3BC211F43C3EA005D6B4D /* NicknameViewController.h */,
+				76E3BC221F43C3EA005D6B4D /* NicknameViewController.m */,
+				76E3BC241F43C3FF005D6B4D /* AboutAppViewController.h */,
+				76E3BC251F43C3FF005D6B4D /* AboutAppViewController.m */,
+				76E3BC271F43C41A005D6B4D /* UpdatePasswordViewController.h */,
+				76E3BC281F43C41A005D6B4D /* UpdatePasswordViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -560,8 +630,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E3BC1A1F43C3AF005D6B4D /* AllNotesViewController.m in Sources */,
+				76E3BC1D1F43C3C8005D6B4D /* AllNoteDetailViewController.m in Sources */,
 				762BF8571F42D7A3001FB470 /* ViewController.m in Sources */,
+				76E3BC201F43C3DA005D6B4D /* SettingViewController.m in Sources */,
+				76E3BC021F43C321005D6B4D /* LaunchScreenViewController.m in Sources */,
+				76E3BC0E1F43C373005D6B4D /* ForgetPasswordViewController.m in Sources */,
+				76E3BC081F43C352005D6B4D /* LoginViewController.m in Sources */,
+				76E3BC231F43C3EA005D6B4D /* NicknameViewController.m in Sources */,
+				76E3BC291F43C41A005D6B4D /* UpdatePasswordViewController.m in Sources */,
+				76E3BC141F43C38F005D6B4D /* AddNoteViewController.m in Sources */,
+				76E3BC111F43C380005D6B4D /* RegisterViewController.m in Sources */,
+				76E3BC051F43C340005D6B4D /* GuidePageViewController.m in Sources */,
+				76E3BC0B1F43C360005D6B4D /* MainViewController.m in Sources */,
+				76E3BC171F43C39E005D6B4D /* NoteDetailViewController.m in Sources */,
 				762BF8541F42D7A3001FB470 /* AppDelegate.m in Sources */,
+				76E3BC261F43C3FF005D6B4D /* AboutAppViewController.m in Sources */,
 				762BF8511F42D7A3001FB470 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
