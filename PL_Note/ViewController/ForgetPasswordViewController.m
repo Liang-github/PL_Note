@@ -33,9 +33,44 @@
     //获取验证码，要先判断手机号是否已经注册，如果没有注册，则不能获取验证码，让用户去注册界面
     [self isRepeatUsername:USER_TABLE username:self.phoneTextField.text limitCount:50];
 }
+//点击重置密码按钮
 - (IBAction)resettingPasswordButtonPressed:(id)sender {
+    //首先判断验证是否成功
+    [SMSSDK commitVerificationCode:self.validateCodeTextField.text phoneNumber:self.phoneTextField.text zone:@"86" result:^(NSError *error) {
+        if (!error) {
+            //新密码不能为空
+            if ([self.nowPasswordTextField.text isEqualToString:@""]) {
+                [AllUtils showPromptDialog:@"提示" andMessage:@"新密码不能为空" OKButton:@"确定" OKButtonAction:nil cancelButton:@"" cancelButtonAction:nil contextViewController:self];
+            } else {
+                BmobQuery *query = [BmobQuery queryWithClassName:USER_TABLE];
+                [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+                    if (error) {
+                        
+                    } else {
+                        for (BmobObject *obj in array) {
+                            if ([[obj objectForKey:@"username"] isEqualToString:self.phoneTextField.text]) {
+                                [obj setObject:self.nowPasswordTextField.text forKey:@"Password"];
+                                [obj updateInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+                                    if (isSuccessful) {
+                                        [AllUtils showPromptDialog:@"提示" andMessage:[NSString stringWithFormat:@"密码已经重设为：%@ , 请登录！",self.nowPasswordTextField.text] OKButton:@"确定" OKButtonAction:^(UIAlertAction *action) {
+                                            [AllUtils jumpToViewController:@"LoginViewController" contextViewController:self handler:nil];
+                                        } cancelButton:@"" cancelButtonAction:nil contextViewController:self];
+                                    } else {
+                                        [AllUtils showPromptDialog:@"提示" andMessage:@"网络异常，重置密码失败，请稍后再试！" OKButton:@"确定" OKButtonAction:nil cancelButton:@"" cancelButtonAction:nil contextViewController:self];
+                                    }
+                                }];
+                            }
+                        }
+                    }
+                }];
+            }
+        } else {
+            [AllUtils showPromptDialog:@"提示" andMessage:@"验证失败" OKButton:@"确定" OKButtonAction:nil cancelButton:@"" cancelButtonAction:nil contextViewController:self];
+        }
+    }];
 }
 - (IBAction)loginButtonPressed:(id)sender {
+    [AllUtils jumpToViewController:@"LoginViewController" contextViewController:self handler:nil];
 }
 
 #pragma mark - 查询手机号是否已经注册
